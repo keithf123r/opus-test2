@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+// App.js
+import React, { useState } from 'react';
+import Map from './components/Map';
+import TerritoryForm from './components/TerritoryForm';
 import './App.css';
 
-function App() {
+const App = () => {
+  const [territories, setTerritories] = useState({});
+
+  const handleTerritoryAssignment = (zipCode, repId) => {
+    setTerritories({ ...territories, [zipCode]: repId });
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <h1>Sales Territory Planner</h1>
+      <div className="main-content">
+        <Map territories={territories} />
+        <TerritoryForm onAssign={handleTerritoryAssignment} />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
