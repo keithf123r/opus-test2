@@ -14,7 +14,7 @@ import ctGeoJson from '../data/states/ct_connecticut_zip_codes_geo.min.json';
 import dcGeoJson from '../data/states/dc_district_of_columbia_zip_codes_geo.min.json';
 import deGeoJson from '../data/states/de_delaware_zip_codes_geo.min.json';
 import flGeoJson from '../data/states/fl_florida_zip_codes_geo.min.json';
-import gaGeoJson from '../data/states/ga_georgia_zip_codes_geo.min.json';
+/*import gaGeoJson from '../data/states/ga_georgia_zip_codes_geo.min.json';
 import hiGeoJson from '../data/states/hi_hawaii_zip_codes_geo.min.json';
 import iaGeoJson from '../data/states/ia_iowa_zip_codes_geo.min.json';
 import idGeoJson from '../data/states/id_idaho_zip_codes_geo.min.json';
@@ -54,7 +54,7 @@ import vtGeoJson from '../data/states/vt_vermont_zip_codes_geo.min.json';
 import waGeoJson from '../data/states/wa_washington_zip_codes_geo.min.json';
 import wiGeoJson from '../data/states/wi_wisconsin_zip_codes_geo.min.json';
 import wvGeoJson from '../data/states/wv_west_virginia_zip_codes_geo.min.json';
-import wyGeoJson from '../data/states/wy_wyoming_zip_codes_geo.min.json';
+import wyGeoJson from '../data/states/wy_wyoming_zip_codes_geo.min.json';*/
 
 // Create an object that maps state codes to their GeoJSON data
 const stateData = {
@@ -68,7 +68,7 @@ const stateData = {
   DC: dcGeoJson,
   DE: deGeoJson,
   FL: flGeoJson,
-  GA: gaGeoJson,
+  /*GA: gaGeoJson,
   HI: hiGeoJson,
   IA: iaGeoJson,
   ID: idGeoJson,
@@ -108,7 +108,7 @@ const stateData = {
   WA: waGeoJson,
   WI: wiGeoJson,
   WV: wvGeoJson,
-  WY: wyGeoJson,
+  WY: wyGeoJson,*/
 };
 
 const Map = ({ territories }) => {
